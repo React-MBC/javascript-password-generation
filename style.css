@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.input-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.pass{
+    width: max-content;
+    font-size: 2em;
+    color: #000;
+    padding: 2%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 2%;
+}
+
+.check-box{
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    padding-top: 2%;
+}
+
+
+.row{
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.row:nth-child(2){
+    margin-top: 10px;
+    gap: 1.3+em;
+}
+
+#password{
+    width: 120%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: transparent;
+    padding: 0 20px;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #303;
+    box-sizing: border-box;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+                inset 4px 4px 10px rgba(0, 0, 0, 0.05),
+                inset -4px -4px 10px rgba(255, 255, 255, 1),
+                4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+            
+#password::placeholder{
+    letter-spacing: 0;
+    font-size: .5em;
+}
+            
+#btn {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#btn:active{
+    background: #009216;
+}
+
+input[type="checkbox"]{
+    width: 50px;
+    height: 20px;
+    -webkit-appearance: none;
+    outline: none;
+    background: #5d5d5d;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #808080;
+    margin-left: 20%;
+}
+
+input:checked[type="checkbox"]{
+    background: #23f403;
+}
+
+input[type="checkbox"]::before{
+    content: '';
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    transition: 500ms;
+
+}
+
+input:checked[type="checkbox"]::before{
+    margin-left: 35px;
+
+}
+
+#lengthPass {
+    width: 50%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: transparent;
+    padding: 0 20px;
+    font-size: 1.1em;
+    letter-spacing: 5px;
+    color: #303;
+    box-sizing: border-box;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+                inset 4px 4px 15px rgba(0, 0, 0, 0.05),
+                inset -4px -4px 15px rgba(255, 255, 255, 1),
+                4px 4px 15px rgba(0, 0, 0, 0.05);    
+}
+
+@media(max-width: 596px){
+    #password{
+        width: 80%;
+    }
+
+}
